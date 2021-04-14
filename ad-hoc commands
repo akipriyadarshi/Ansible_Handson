@@ -1,0 +1,16 @@
+Example 1 : To list files
+ansible test -a "ls"
+
+Example 2: To create new file
+ansible all -a "touch newFile"
+
+Example 3: To check disk usage of remote hosts
+ansible test -a "df -h"
+
+Example 4:To install a package we can use snap or apt.
+ansible test[0:2] -a "sudo snap install tree"
+
+Example 5:To Check free memory of hosts
+ansible test -a "free -h"
+
+Note: test is the group name  

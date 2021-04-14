@@ -1,0 +1,9 @@
+---
+- hosts: test
+  become: yes
+  tasks:
+    - name: installing
+      apt:
+         name: apache2
+         state: present
+...

@@ -1,0 +1,13 @@
+---
+- name: copying files from server to host
+  hosts: test
+  become: yes
+  tasks: 
+  - name: copying file with playbook
+    copy: 
+      src: /home/knoldus/new_one.txt
+      dest: /home/ubuntu
+      owner: ubuntu
+      group: ubuntu
+      mode: 0644
+...

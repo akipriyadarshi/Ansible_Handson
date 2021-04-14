@@ -1,0 +1,12 @@
+---
+- hosts: test
+  become: yes
+  vars:
+    installer: tree
+  tasks:
+    - name: installing
+      snap:
+         name: "{{ installer}}"
+         state: present
+...
+
