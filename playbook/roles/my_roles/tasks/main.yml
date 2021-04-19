@@ -1,0 +1,8 @@
+- name: Install tree
+  snap: 
+     name: tree
+     state: present 
+- name: copying file
+  copy: 
+     src: new_one.txt
+     dest: /home/ubuntu

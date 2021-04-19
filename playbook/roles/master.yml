@@ -1,0 +1,8 @@
+
+---
+  - name: roles
+    hosts: aws
+    become: yes
+    roles:
+      - my_roles
+...
